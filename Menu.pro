@@ -19,17 +19,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     connection.cpp \
+    ingredient.cpp \
     main.cpp \
     mainwindow.cpp \
-    pizza.cpp \
-    plat.cpp
+    offre.cpp \
+    pizza.cpp
 
 HEADERS += \
     connection.h \
     include.h \
+    ingredient.h \
     mainwindow.h \
-    pizza.h \
-    plat.h
+    offre.h \
+    pizza.h
 
 FORMS += \
     mainwindow.ui

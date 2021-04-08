@@ -1,5 +1,8 @@
 #include "connection.h"
 
+#include <iostream>
+using namespace std;
+
 Connection::Connection()
 {
 }
@@ -12,8 +15,13 @@ bool Connection::createconnect()
     db.setUserName("rami");          //inserer nom de l'utilisateur
     db.setPassword("esprit");        //inserer mot de passe de cet utilisateur
 
-    if (db.open())
-        test = true;
+    QSqlQuery query;
+    QMessageBox msgBoxC;
 
+
+    if (db.open())
+    {
+        test = true;
+    }
     return test;
 }
