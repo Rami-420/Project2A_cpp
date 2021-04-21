@@ -38,6 +38,19 @@ private slots:
 
     void on_update_pizza_clicked();
 
+    void on_order_2_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_7_clicked();
+
+    void on_recherche_pizza_clicked();
+
+    void on_update_pizza_button_7_clicked();
+
+    void on_delete_pizza_clicked();
+
+
 private:
     Ui::MainWindow *ui;
     pizza P;

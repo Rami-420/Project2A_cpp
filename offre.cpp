@@ -82,15 +82,16 @@ bool offre::ajouter_offre()
     {
         Pizza[i] = P[i].getnom();
     }
+//    query.prepare("INSERT INTO offre (ID_offre, prix, nb_cals, nb_pnt, nom, path, pizza_0,pizza_1,pizza_2,pizza_3,pizza_4,pizza_5,pizza_6,pizza_7,pizza_8,pizza_9 ) VALUES (:ID_offre, :prix, :nb_cals, :nb_pnt, :nom, :path, :pizza_0 , :pizza_1 , :pizza_2 , :pizza_3 , :pizza_4 , :pizza_5 , :pizza_6 , :pizza_7 , :pizza_8 , :pizza_9)");
 
-    query.prepare("INSERT INTO offre (ID_offre, prix, nb_cals, nb_pnt, nom, path, pizza_0,pizza_1,pizza_2,pizza_3,pizza_4,pizza_5,pizza_6,pizza_7,pizza_8,pizza_9 ) VALUES (:ID_offre, :prix, :nb_cals, :nb_pnt, :nom, :path, :pizza_0 , :pizza_1 , :pizza_2 , :pizza_3 , :pizza_4 , :pizza_5 , :pizza_6 , :pizza_7 , :pizza_8 , :pizza_9)");
+    query.prepare("INSERT INTO offre (ID_offre, prix, nb_cals, nb_pnt, nom, path ) VALUES (:ID_offre, :prix, :nb_cals, :nb_pnt, :nom, :path)");
     query.bindValue(":ID_offre", id_string);
     query.bindValue(":prix", prix_string);
     query.bindValue(":nb_cals", nb_cals_string);
     query.bindValue(":nb_pnt", nb_pnt_string);
     query.bindValue(":nom", nom);
     query.bindValue(":path", path);
-
+/*
     query.bindValue(":pizza_0", Pizza[0]);
     query.bindValue(":pizza_1", Pizza[1]);
     query.bindValue(":pizza_2", Pizza[2]);
@@ -101,6 +102,6 @@ bool offre::ajouter_offre()
     query.bindValue(":pizza_7", Pizza[7]);
     query.bindValue(":pizza_8", Pizza[8]);
     query.bindValue(":pizza_9", Pizza[9]);
-
+*/
     return query.exec();
 }

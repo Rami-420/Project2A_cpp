@@ -27,7 +27,7 @@
      <enum>QTabWidget::West</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="home">
      <attribute name="title">
@@ -77,7 +77,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -102,83 +102,13 @@
          <string/>
         </property>
        </widget>
-       <widget class="QWidget" name="layoutWidget_10">
-        <property name="geometry">
-         <rect>
-          <x>320</x>
-          <y>50</y>
-          <width>93</width>
-          <height>201</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_15">
-         <item>
-          <widget class="QLabel" name="label_28">
-           <property name="text">
-            <string>Nom:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_12"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_29">
-           <property name="text">
-            <string>Prix:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_20">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_30">
-           <property name="text">
-            <string>Calories:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_21">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_31">
-           <property name="text">
-            <string>Points:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_22"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QListWidget" name="afficher_offre_list">
-        <property name="geometry">
-         <rect>
-          <x>680</x>
-          <y>40</y>
-          <width>256</width>
-          <height>421</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QWidget" name="layoutWidget_5">
         <property name="geometry">
          <rect>
           <x>160</x>
           <y>320</y>
-          <width>70</width>
-          <height>44</height>
+          <width>72</width>
+          <height>120</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -258,16 +188,6 @@
          </item>
         </layout>
        </widget>
-       <widget class="QTableView" name="tableView">
-        <property name="geometry">
-         <rect>
-          <x>400</x>
-          <y>270</y>
-          <width>256</width>
-          <height>192</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
@@ -312,6 +232,16 @@
         </property>
         <property name="text">
          <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>130</y>
+          <width>461</width>
+          <height>301</height>
+         </rect>
         </property>
        </widget>
       </widget>
@@ -369,12 +299,7 @@
            </property>
            <item>
             <property name="text">
-             <string>Prix</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Calories</string>
+             <string>ID_pizza</string>
             </property>
            </item>
            <item>
@@ -384,7 +309,12 @@
            </item>
            <item>
             <property name="text">
-             <string/>
+             <string>Prix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>nb_Cals</string>
             </property>
            </item>
           </widget>
@@ -414,52 +344,8 @@
          </rect>
         </property>
         <property name="text">
-         <string>(¬_¬ )</string>
+         <string/>
         </property>
-       </widget>
-       <widget class="QWidget" name="layoutWidget_13">
-        <property name="geometry">
-         <rect>
-          <x>640</x>
-          <y>40</y>
-          <width>118</width>
-          <height>44</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_20">
-         <item>
-          <widget class="QLabel" name="label_33">
-           <property name="text">
-            <string>Taille:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_6">
-           <item>
-            <widget class="QCheckBox" name="checkBox_13">
-             <property name="text">
-              <string>M</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="checkBox_14">
-             <property name="text">
-              <string>L</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="checkBox_15">
-             <property name="text">
-              <string>XL</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
        </widget>
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
@@ -490,190 +376,13 @@
            </item>
            <item>
             <property name="text">
-             <string>ID</string>
+             <string>ID_pizza</string>
             </property>
            </item>
           </widget>
          </item>
         </layout>
        </widget>
-      </widget>
-      <widget class="QWidget" name="tab_8">
-       <attribute name="title">
-        <string>Update pizza</string>
-       </attribute>
-       <widget class="QLineEdit" name="update_id">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>120</y>
-          <width>161</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>(¬_¬ )</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="update_pizza">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>110</y>
-          <width>91</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Update</string>
-        </property>
-       </widget>
-       <widget class="QWidget" name="layoutWidget_8">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>180</y>
-          <width>93</width>
-          <height>188</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_9">
-         <item>
-          <widget class="QLabel" name="label_22">
-           <property name="text">
-            <string>Nom:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="ajouter_pizza_nom_2"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_23">
-           <property name="text">
-            <string>Prix:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="ajouter_pizza_prix_2">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_32">
-           <property name="text">
-            <string>Calories:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="ajouter_pizza_cals_2">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_34">
-           <property name="text">
-            <string>Points:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="ajouter_pizza_nb_pnt_2"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="layoutWidget_12">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>320</y>
-          <width>118</width>
-          <height>44</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_12">
-         <item>
-          <widget class="QLabel" name="label_35">
-           <property name="text">
-            <string>Taille:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <item>
-            <widget class="QCheckBox" name="ajouter_pizza_M_2">
-             <property name="text">
-              <string>M</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="ajouter_pizza_L_2">
-             <property name="text">
-              <string>L</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="ajouter_pizza_XL_2">
-             <property name="text">
-              <string>XL</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="layoutWidget_15">
-        <property name="geometry">
-         <rect>
-          <x>410</x>
-          <y>180</y>
-          <width>191</width>
-          <height>44</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_13">
-         <item>
-          <widget class="QLabel" name="label_41">
-           <property name="text">
-            <string>Sauce type:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_7">
-           <item>
-            <widget class="QCheckBox" name="ajouter_pizza_rouge_2">
-             <property name="text">
-              <string>Sauce rouge</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="ajouter_pizza_blanche_2">
-             <property name="text">
-              <string>Sauce blanche</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab_9">
-       <attribute name="title">
-        <string>Sides</string>
-       </attribute>
       </widget>
      </widget>
     </widget>
@@ -715,7 +424,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="ajouter_offre_nom"/>
+          <widget class="QLineEdit" name="ajouter_offre_nom">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QLabel" name="label_19">
@@ -728,6 +441,9 @@
           <widget class="QLineEdit" name="ajouter_offre_prix">
            <property name="text">
             <string/>
+           </property>
+           <property name="maxLength">
+            <number>20</number>
            </property>
           </widget>
          </item>
@@ -743,6 +459,9 @@
            <property name="text">
             <string/>
            </property>
+           <property name="maxLength">
+            <number>20</number>
+           </property>
           </widget>
          </item>
          <item>
@@ -753,7 +472,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="ajouter_offre_nb_pnt"/>
+          <widget class="QLineEdit" name="ajouter_offre_nb_pnt">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QLabel" name="label_24">
@@ -844,7 +567,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="ajouter_pizza_nom"/>
+          <widget class="QLineEdit" name="ajouter_pizza_nom">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QLabel" name="label_2">
@@ -857,6 +584,9 @@
           <widget class="QLineEdit" name="ajouter_pizza_prix">
            <property name="text">
             <string/>
+           </property>
+           <property name="maxLength">
+            <number>20</number>
            </property>
           </widget>
          </item>
@@ -872,6 +602,9 @@
            <property name="text">
             <string/>
            </property>
+           <property name="maxLength">
+            <number>20</number>
+           </property>
           </widget>
          </item>
          <item>
@@ -882,7 +615,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="ajouter_pizza_nb_pnt"/>
+          <widget class="QLineEdit" name="ajouter_pizza_nb_pnt">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>
@@ -1043,11 +780,172 @@
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_23">
+     </widget>
+    </widget>
+    <widget class="QWidget" name="account">
+     <attribute name="title">
+      <string>Modifier</string>
+     </attribute>
+     <widget class="QTabWidget" name="menu0_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>971</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_36">
        <attribute name="title">
-        <string>Plat</string>
+        <string>Offre</string>
        </attribute>
-       <widget class="QWidget" name="layoutWidget_2">
+       <widget class="QWidget" name="layoutWidget_27">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>190</y>
+          <width>93</width>
+          <height>236</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_48">
+         <item>
+          <widget class="QLabel" name="label_89">
+           <property name="text">
+            <string>Nom:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ajouter_offre_nom_4">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_90">
+           <property name="text">
+            <string>Prix:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ajouter_offre_prix_4">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_91">
+           <property name="text">
+            <string>Calories:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ajouter_offre_cals_4">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_92">
+           <property name="text">
+            <string>Points:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ajouter_offre_nb_pnt_4">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_93">
+           <property name="text">
+            <string>path .jpg</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ajouter_offre_path_4"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="ajouter_offre_button_4">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>440</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_28">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>50</y>
+          <width>211</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_49">
+         <item>
+          <widget class="QLabel" name="label_94">
+           <property name="text">
+            <string>Pizza:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="ajouter_offre_listPizza_4">
+           <item>
+            <property name="text">
+             <string>pizza</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_37">
+       <attribute name="title">
+        <string>Pizza</string>
+       </attribute>
+       <widget class="QPushButton" name="update_pizza_button_7">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>440</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_29">
         <property name="geometry">
          <rect>
           <x>100</x>
@@ -1056,76 +954,180 @@
           <height>188</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_6">
+        <layout class="QVBoxLayout" name="verticalLayout_50">
          <item>
-          <widget class="QLabel" name="label_8">
+          <widget class="QLabel" name="label_95">
            <property name="text">
             <string>Nom:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_5"/>
+          <widget class="QLineEdit" name="ajouter_pizza_nom_6">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_9">
+          <widget class="QLabel" name="label_96">
            <property name="text">
             <string>Prix:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_6">
+          <widget class="QLineEdit" name="ajouter_pizza_prix_6">
            <property name="text">
             <string/>
+           </property>
+           <property name="maxLength">
+            <number>20</number>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_10">
+          <widget class="QLabel" name="label_97">
            <property name="text">
             <string>Calories:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_7">
+          <widget class="QLineEdit" name="ajouter_pizza_cals_6">
            <property name="text">
             <string/>
+           </property>
+           <property name="maxLength">
+            <number>20</number>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_11">
+          <widget class="QLabel" name="label_98">
            <property name="text">
             <string>Points:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_8"/>
+          <widget class="QLineEdit" name="ajouter_pizza_nb_pnt_6">
+           <property name="maxLength">
+            <number>20</number>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="layoutWidget_3">
+       <widget class="QWidget" name="layoutWidget_30">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>330</y>
+          <width>118</width>
+          <height>44</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_51">
+         <item>
+          <widget class="QLabel" name="label_99">
+           <property name="text">
+            <string>Taille:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QCheckBox" name="ajouter_pizza_M_6">
+             <property name="text">
+              <string>M</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ajouter_pizza_L_6">
+             <property name="text">
+              <string>L</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ajouter_pizza_XL_6">
+             <property name="text">
+              <string>XL</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_42">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>190</y>
+          <width>191</width>
+          <height>44</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_52">
+         <item>
+          <widget class="QLabel" name="label_100">
+           <property name="text">
+            <string>Sauce type:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_19">
+           <item>
+            <widget class="QCheckBox" name="ajouter_pizza_rouge_6">
+             <property name="text">
+              <string>Sauce rouge</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ajouter_pizza_blanche_6">
+             <property name="text">
+              <string>Sauce blanche</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_43">
         <property name="geometry">
          <rect>
           <x>660</x>
-          <y>180</y>
+          <y>181</y>
           <width>258</width>
           <height>214</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_7">
+        <layout class="QVBoxLayout" name="verticalLayout_53">
          <item>
-          <widget class="QLabel" name="label_12">
+          <widget class="QLabel" name="label_101">
            <property name="text">
             <string>Ingredients:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QListWidget" name="ajouter_pizza_ing_2">
+          <widget class="QListWidget" name="ajouter_pizza_ing_8">
+           <property name="selectionMode">
+            <enum>QAbstractItemView::MultiSelection</enum>
+           </property>
+           <property name="viewMode">
+            <enum>QListView::ListMode</enum>
+           </property>
            <item>
             <property name="text">
              <string>Semoule</string>
@@ -1176,180 +1178,56 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="layoutWidget_4">
+       <widget class="QPushButton" name="recherche_pizza">
         <property name="geometry">
          <rect>
-          <x>340</x>
-          <y>230</y>
-          <width>196</width>
-          <height>44</height>
+          <x>240</x>
+          <y>90</y>
+          <width>101</width>
+          <height>41</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_8">
-         <item>
-          <widget class="QLabel" name="label_13">
-           <property name="text">
-            <string>Type:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
-           <item>
-            <widget class="QCheckBox" name="checkBox_6">
-             <property name="text">
-              <string>Entre</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="checkBox_7">
-             <property name="text">
-              <string>Principal</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="checkBox_8">
-             <property name="text">
-              <string>Dessert</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
+        <property name="text">
+         <string>Recherche</string>
+        </property>
        </widget>
-       <widget class="QPushButton" name="ajouter_plat_button">
+       <widget class="QPushButton" name="delete_pizza">
         <property name="geometry">
          <rect>
-          <x>830</x>
+          <x>720</x>
           <y>440</y>
           <width>91</width>
           <height>41</height>
          </rect>
         </property>
         <property name="text">
-         <string>Ajouter</string>
+         <string>Delete</string>
         </property>
        </widget>
-      </widget>
-      <widget class="QWidget" name="tab_24">
-       <attribute name="title">
-        <string>Ingredient</string>
-       </attribute>
-       <widget class="QWidget" name="layoutWidget_6">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>190</y>
-          <width>111</width>
-          <height>44</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_10">
-         <item>
-          <widget class="QLabel" name="label_16">
-           <property name="text">
-            <string>Pour:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <item>
-            <widget class="QCheckBox" name="checkBox_9">
-             <property name="text">
-              <string>Pizza</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="checkBox_10">
-             <property name="text">
-              <string>Plat</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QPushButton" name="ajouter_pizza_button_3">
-        <property name="geometry">
-         <rect>
-          <x>830</x>
-          <y>440</y>
-          <width>91</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Ajouter</string>
-        </property>
-       </widget>
-       <widget class="QWidget" name="layoutWidget_9">
+       <widget class="QWidget" name="">
         <property name="geometry">
          <rect>
           <x>100</x>
-          <y>190</y>
+          <y>90</y>
           <width>93</width>
-          <height>141</height>
+          <height>44</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_14">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
          <item>
-          <widget class="QLabel" name="label_25">
+          <widget class="QLabel" name="label_8">
            <property name="text">
-            <string>Nom:</string>
+            <string>ID:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_17"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_26">
-           <property name="text">
-            <string>Prix:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_18">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_27">
-           <property name="text">
-            <string>path .icon</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_19">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
+          <widget class="QLineEdit" name="update_pizza_ID"/>
          </item>
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_25">
-       <attribute name="title">
-        <string>Drinks</string>
-       </attribute>
-      </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="account">
-     <attribute name="title">
-      <string>Modifier</string>
-     </attribute>
     </widget>
     <widget class="QWidget" name="more">
      <attribute name="title">

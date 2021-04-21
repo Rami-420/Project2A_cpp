@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
 */
     //.qss
-    /*
+/*
     QFile file("E:/Project C++/Qt/Menu/DeepBox.qss");
         file.open(QFile::ReadOnly);
 
@@ -33,7 +33,10 @@ int main(int argc, char *argv[])
 
         //setup stylesheet
         a.setStyleSheet(styleSheet);
-    */
+
+*/
+
+
 
     w.show();
     return a.exec();
