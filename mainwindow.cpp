@@ -173,60 +173,17 @@ void MainWindow::on_order_2_clicked()
 
 void MainWindow::on_update_pizza_clicked()
 {
-    pizza p;
-    int n=ui->update_id->text().toInt();
-    cout<<"N= "<<n;
-
-p.set_ID_pizza(ui->update_id->text().toInt());
-p.trouver_pizza(QString::number(p.get_ID_pizza()));
-ui->ajouter_pizza_prix_2->setText(QString :: number(p.getprix()));
-ui->ajouter_pizza_cals_2->setText(QString :: number(p.getnb_cals()));
-ui->ajouter_pizza_nb_pnt_2->setText(QString :: number (p.getnb_pnt()));
- ui->tableView->setModel(Offre.afficher_offre());
 
 
 }
 void MainWindow::on_pushButton_6_clicked()
 {
-pizza p ;
-p.setprix(ui->ajouter_pizza_prix_2->text().toInt());
-p.setnb_cals(ui->ajouter_pizza_cals_2->text().toInt());
-p.setnb_pnt(ui->ajouter_pizza_nb_pnt_2->text().toInt());
 
-if (ui->ajouter_pizza_M_2->isChecked())
-{
- p.settaille("1");
-}
-if (ui->ajouter_pizza_L_2->isChecked())
-{
- p.settaille("2");
-}
-if (ui->ajouter_pizza_XL_2->isChecked())
-{
- p.settaille("3");
-}
-if (ui->ajouter_pizza_blanche_2->isChecked())
-{
- p.setsauce("1");
-}
-if (ui->ajouter_pizza_rouge_2->isChecked())
-{
- p.setsauce("2");
-}
-
-p.setnom(ui->ajouter_pizza_nom_2->text());
-p.update_pizza(ui->update_id->text().toInt());
 }
 
 
 void MainWindow::on_pushButton_7_clicked()
 {
-    pizza p;
-    p.set_ID_pizza(ui->update_id->text().toInt());
-    p.supprimer_P(p.get_ID_pizza());
-    //bool test=p.supprimer_P(p.get_ID_pizza());
-
-    ui->tableView->setModel(Offre.afficher_offre());
 
 }
 

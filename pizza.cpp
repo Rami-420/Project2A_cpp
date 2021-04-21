@@ -122,15 +122,11 @@ bool pizza::update_pizza(int n)
 bool pizza::supprimer_P(int n)
 {
     QSqlQuery query;
-    pizza x;
-    x.trouver_pizza(QString::number(n));
-    if (x.get_ID_pizza() == 0)
-        qWarning("id inexistant ");
-    else
-    {
-        query.prepare("Delete FROM pizza where ID_pizza = :id ");
-        query.bindValue(":id", n);
-    }
+
+
+    query.prepare("Delete FROM pizza where ID_pizza = :id ");
+    query.bindValue(":id", n);
+
     return query.exec();
 }
 pizza pizza::trouver_pizza(QString n)
@@ -139,14 +135,13 @@ pizza pizza::trouver_pizza(QString n)
     QSqlQuery query;
     //QString n1 = QString::number(n);
     // if (n == "ID ")
-    if(query.exec("SELECT * FROM pizza where ID_pizza = " + n)) cout<<"ay";
+    query.exec("SELECT * FROM pizza where ID_pizza = " + n);
     int c;
     QString s;
     while (query.next())
         {
             c = query.value(0).toInt();
             p.set_ID_pizza(c);
-            cout<<"id= "<<c<<endl;
             s = query.value(1).toString();
             p.setnom(s);
             c = query.value(2).toInt();
